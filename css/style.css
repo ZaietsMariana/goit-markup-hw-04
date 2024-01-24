@@ -21,11 +21,12 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+ }
 
 .page-navigation{
   display: flex;
   align-items: center;
+  
 }
 
 
@@ -54,6 +55,7 @@ body{
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  position: relative;
 }
 
 
@@ -63,6 +65,9 @@ body{
   color: #404bbf;
 }
 
+.top-line .one-link{
+color: #404bbf;
+}
 
 .link {
   display: block;
@@ -72,12 +77,9 @@ body{
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
-  transition-property: color;
 }
 
-
-
-.page-navigation .link:nth-child(1)::after{
+.link:nth-child(1)::after{
   width: 48px;
   height: 4px;
   background-color: #404BBF;
