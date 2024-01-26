@@ -19,15 +19,13 @@ body{
 
 .page-header-container{
   display: flex;
-  justify-content: space-between;
   align-items: center;
  }
 
 .page-navigation{
   display: flex;
   align-items: center;
-  
-}
+  }
 
 
 .logo-web {
@@ -98,6 +96,7 @@ color: #404bbf;
 /*====== Contacts======= */
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-list {
@@ -381,9 +380,11 @@ ul li {
   margin-bottom: 0;
   padding-left: 0;
   display: block;
-}
+  margin: 0;
+  padding: 0;
+  }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
