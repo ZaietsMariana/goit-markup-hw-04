@@ -408,13 +408,15 @@ width: calc((100% - 72px) / 4);
 /*=====Footer=====*/
 
 .logo-discription {
+  display: flex;
   background: #2e2f42;
   padding: 100px 0;
 }
 
 .footer-logo{
+  width: 1128px;
   display: block;
-}
+  }
 
 .logo-web-footer{
   color: #4D5AE5;
@@ -444,9 +446,10 @@ width: calc((100% - 72px) / 4);
 }
 
 .icon-container-footer{
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  margin-left: 120px;
 }
 
 .icon-title{
