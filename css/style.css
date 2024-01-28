@@ -11,6 +11,38 @@ body{
   margin: 0 auto;
 }
 
+ul li {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
 /*======Header====== */
 
 .page-header {
@@ -56,18 +88,7 @@ body{
   position: relative;
 }
 
-
-
-.page-navigation .link:hover,
-.page-navigation .link:focus {
-  color: #404bbf;
-}
-
-.top-line .one-link{
-color: #404bbf;
-}
-
-.link {
+.header-link {
   display: block;
   color: #2e2f42;
   font-size: 16px;
@@ -75,9 +96,19 @@ color: #404bbf;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  position: relative;
 }
 
-.link:nth-child(1)::after{
+.page-navigation .header-link:hover,
+.page-navigation .header-link:focus {
+  color: #404bbf;
+}
+
+.current{
+  color: #404BBF;
+}
+
+.current::after{
   width: 48px;
   height: 4px;
   background-color: #404BBF;
@@ -204,35 +235,6 @@ width: calc((100% - 72px) / 4);
   border: 1px solid  #8E8F99;
   background:  #F4F4FD;
 }
-
-.strengths-item:nth-child(1)::before{
-  background-image: url(../images/antenna.svg);
-  background-size: center;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.strengths-item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-  background-size: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.strengths-item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-  background-size: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.strengths-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-  background-size: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 
 .strengths-title {
   color: #2e2f42;
@@ -408,11 +410,9 @@ width: calc((100% - 72px) / 4);
 /*=====Footer=====*/
 
 .logo-discription {
-  display: flex;
   background: #2e2f42;
   padding: 100px 0;
 }
-
 
 .logo-web-footer{
   color: #4D5AE5;
@@ -428,7 +428,6 @@ width: calc((100% - 72px) / 4);
   margin-bottom: 16px;
 }
 
-
 .second-logostudio {
   color: #F4F4FD
 }
@@ -441,50 +440,3 @@ width: calc((100% - 72px) / 4);
   width: 264px;
 }
 
-.icon-container-footer{
-  justify-content: center;
-
-}
-
-.icon-title{
-  color: #FFF;
-  font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-bottom: 16px;
-}
-
-ul li {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: block;
-  margin: 0;
-  padding: 0;
-  }
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-img {
-  display: block;
-}
