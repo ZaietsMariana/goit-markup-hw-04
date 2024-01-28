@@ -413,10 +413,6 @@ width: calc((100% - 72px) / 4);
   padding: 100px 0;
 }
 
-.footer-logo{
-  width: 1158px;
-  display: block;
-  }
 
 .logo-web-footer{
   color: #4D5AE5;
@@ -446,7 +442,6 @@ width: calc((100% - 72px) / 4);
 }
 
 .icon-container-footer{
-  display: block;
   justify-content: center;
 
 }
