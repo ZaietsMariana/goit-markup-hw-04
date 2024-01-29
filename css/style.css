@@ -99,9 +99,15 @@ img {
   position: relative;
 }
 
+.page-navigation .header{
+  transition-property: color;
+}
+
 .page-navigation .header-link:hover,
 .page-navigation .header-link:focus {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current{
@@ -142,6 +148,9 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -201,6 +210,9 @@ max-width: 1440px;
   min-width: 169px;
   height: 56px;
   border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -351,6 +363,14 @@ padding: 24px 100px;
   background-color: #4D5AE5;
   border-radius: 50%;
   padding: 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover,
+.team-link:focus{
+  background-color: #404BBF;
 }
 
 .team-icon{
@@ -430,6 +450,10 @@ padding: 24px 100px;
   padding: 100px 0;
 }
 
+.footer-logo{
+  width: 264px;
+}
+
 .logo-web-footer{
   color: #4D5AE5;
   font-family: Raleway;
@@ -456,3 +480,55 @@ padding: 24px 100px;
   width: 264px;
 }
 
+.footer-container{
+width: 208px;
+}
+
+.footer-icon-text{
+  color: #FFF;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 16px;
+}
+
+.footer-container{
+  gap: 9px;
+}
+
+.footer-link{
+  display: flex;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  padding: 8px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31D0AA;
+}
+
+.footer-icon {
+  content: "";
+  fill: #F4F4FD;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.footer-social{
+  display: flex;
+  width: 208px;
+}
