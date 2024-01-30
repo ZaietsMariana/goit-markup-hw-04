@@ -47,6 +47,9 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+  0px 2px 1px 0px  rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container{
@@ -97,14 +100,10 @@ img {
   letter-spacing: 0.02em;
   padding: 24px 0;
   position: relative;
-}
-
-.page-navigation .header{
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
+}
 
 .page-navigation .header-link:hover,
 .page-navigation .header-link:focus {
@@ -175,11 +174,9 @@ img {
   url(../images/peopleoffice.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-}
-
-.hero-container{
-max-width: 1440px;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -246,11 +243,14 @@ width: 264px;
 height: 112px;
 padding: 24px 100px;
 margin-bottom: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .strengths-icon{
   width: 64px;
-  height: 64px;
+  height: 64px;align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -289,7 +289,7 @@ margin-bottom: 8px;
 /* =============== */
 
 
-/*===Section 2 Our Team===*/
+/*===Section 3 Our Team===*/
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -312,19 +312,22 @@ margin-bottom: 8px;
 }
 
 .team-list .team-item {
-   background-color: #FFF;
-   border-radius: 0px 0px 4px 4px;
-   width: calc((100% - 72px) / 4);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  background-color: #FFF;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     }
  
 
  .picture-team {
    width: 100%;
- } 
+  }
+ 
 
   .name-team{
-  padding: 32px 0
+  padding: 32px 0;
+  width: 232px;
+  margin: 0 auto;
 }
 
   .team-title {
@@ -345,21 +348,27 @@ margin-bottom: 8px;
   margin-bottom: 8px;
 }
 
+.picture-icon {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.picture-list-icon{
+width: 40px;
+ height: 40px;
+}
+
  .team-list .team-item{
   display: block;
 }
 
- .icon-container{
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-}
-
 .team-link{
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
   background-color: #4D5AE5;
   border-radius: 50%;
@@ -386,7 +395,7 @@ margin-bottom: 8px;
 /* =============== */
 
 
-/*===Section Our Portfolio===*/
+/*===Section 4 Our Portfolio===*/
 
 .portfolio{
   padding: 120px 0 120px 0
@@ -427,9 +436,8 @@ margin-bottom: 8px;
  }
 
 .overlay {
-    color: #F4F4FD;
-    background-color: #3f51b5;
-    color: #fff;
+    background-color: #4d5ae5;;
+    color: #f4f4fd;;
     padding: 40px 32px;
     position: absolute;
     top: 0;
@@ -450,6 +458,16 @@ margin-bottom: 8px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+}
+
+.portfolio-item{
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover{
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .picture-portfolio{
@@ -480,11 +498,13 @@ margin-bottom: 8px;
 
 .footer-one{
   display: flex;
+  align-items: baseline;
   }
 
 
 .footer-logo{
   width: 264px;
+  margin-right: 120px;
 }
 
 .logo-web-footer{
@@ -532,23 +552,32 @@ margin-bottom: 8px;
  font-weight: 500;
  line-height: 1.5;
  letter-spacing: 0.02em;
- display: flex;
- align-items: center;
  margin-bottom: 16px;
+}
+
+.footer-icon{
+  display: flex;
+  gap: 16px;
+}
+
+.picture-footer-icon{
+  width: 40px;
+  height: 40px;
 }
 
 .footer-link{
   display: flex;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  background-color: #4D5AE5;
-  border-radius: 50%;
-  padding: 8px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ width: 100%;
+ height: 100%;
+ flex-shrink: 0;
+ background-color: #4D5AE5;
+ border-radius: 50%;
+ justify-content: center;
+ align-items: center;
+ padding: 8px;
+ transition-property: background-color;
+ transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -563,9 +592,4 @@ margin-bottom: 8px;
   background-size: contain;
   position: absolute;
   background-repeat: no-repeat;
-}
-
-.footer-social{
-  display: flex;
-  width: 208px;
 }
